@@ -1,0 +1,33 @@
+.merchant {
+    width: 100%;
+    height: 690px;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.merchant-image {
+    width: 300px;
+    /* Ubah ukuran sesuai kebutuhan */
+    height: 300px;
+    /* Ubah ukuran sesuai kebutuhan */
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.merchant-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Untuk memastikan gambar terlihat proporsional */
+}
+
+.list-title{
+    text-align: left;
+    font-size: 2.5rem;
+}
