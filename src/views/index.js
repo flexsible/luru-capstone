@@ -10,5 +10,4 @@ import UserProfile from './UserProfile'
 import ResetPassword from './ResetPassword'
 import NotFound from './NotFound'
 
-
 export { Home, Explore, Login, Register, MerchantDetail, MerchantList, ProductDetail, ProductList, UserProfile, NotFound, ResetPassword }

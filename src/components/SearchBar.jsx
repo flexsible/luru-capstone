@@ -1,27 +1,30 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import './SearchBar.scss';
 
-export default function SearchBar({ onSearch }) {
+export default function SearchBar() {
   const [searchTerm, setSearchTerm] = useState("");
-
-  const handleKeyDown = (event) => {
-    if (event.key === "Enter") {
-      onSearch(searchTerm);
-    }
-  };
+  const navigate = useNavigate();
 
   const handleChange = (event) => {
     setSearchTerm(event.target.value);
   };
 
+  const handleSearch = () => {
+    navigate(`explores?s=${searchTerm}`);
+  };
+
   return (
     <>
-      <input
+    <div className="button-home">
+    <input
         className="search-bar"
         placeholder="Silahkan Cari Disini"
         value={searchTerm}
-        onKeyDown={handleKeyDown}
         onChange={handleChange}
       ></input>
+      <button className="btnCari" onClick={handleSearch}>Cari</button>
+    </div>
     </>
   );
 }

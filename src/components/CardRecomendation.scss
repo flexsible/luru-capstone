@@ -3,6 +3,16 @@
     margin: 20px;
     flex-direction: column;
     text-align: left;
+    
+}
+
+.item-wrapper{
+    margin: 10px;
+    // padding: 10px;
+}
+
+.text-wrapper{
+    padding: 10px;
 }
 
 .recomendation-list {
@@ -24,19 +34,24 @@
     height: 220px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    margin-bottom: -5px;
 }
 
 .recomendation-list div h4,
 .recomendation-list div p {
-    margin: 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
 }
 
 .recomendation-list div{
-    margin: 0.5rem;
+    text-decoration: none;
 }
 
 .alamat-text {
-    font-size: 0.8rem;
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-top: -6px;
+    font-weight: 300;
 }
 
 .description-text {
@@ -49,12 +64,32 @@
     -webkit-line-clamp: 4;
     /* Batasi deskripsi menjadi 2 baris */
     -webkit-box-orient: vertical;
+    text-decoration: none;
+}
+
+.title-text{
+    font-size: 1.5rem;
+}
+
+.distance-text{
+    font-size: 0.7rem;
+    margin-top: -6px;
+    margin-bottom: 15px;
+    font-weight: 200;
 }
 
 .recomendation-title {
     margin-bottom: 20px;
     text-align: left;
     font-size: 2.5rem;
+}
+
+
+
+
+a{
+    text-decoration: none;
+    color: #000;
 }
 
 
